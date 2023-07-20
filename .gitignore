@@ -1,2 +1,14 @@
 # ignore node_module
 node_modules
+
+# ignore next dir
+.next
+
+## react
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+bower_components
