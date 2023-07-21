@@ -1,7 +1,6 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
-import styles from './page.module.css'
-import bstp from 'bootstrap/dist/css/bootstrap.css'
-import myStyles from "../css/mycss.css"
+import styles from '../css/page.module.css'
 
 export default function Home() {
   return (
