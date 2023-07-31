@@ -1,7 +1,7 @@
 const author = "Sizhuo (Henry) Sun"
-const description = "This is my personal website that presented as a portfolio"
+const description = "This is my personal website that presented as a portfolio" // TODO: change to self introduction
 const url = "https://www.hungry5656.com"
-export const Metadata = {
+export const MyMetadata = {
     metadataBase: new URL(url),
     title: {
         default: `hungry5656`,

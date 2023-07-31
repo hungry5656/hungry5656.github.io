@@ -1,15 +1,19 @@
+import 'bootstrap/dist/css/bootstrap.css'
 import './globals.css'
 import { Inter } from 'next/font/google'
-import {Metadata} from 'src/components'
+import {MyMetadata, MyHeader} from 'src/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {...Metadata}
+export const metadata = {...MyMetadata}
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  )
+export default function RootLayout({ children, Component, pageProps }) {
+    return (
+        <html lang="en">
+            <body className={inter.className}>
+                <MyHeader {...pageProps} />
+                {children}
+            </body>
+        </html>
+    )
 }
