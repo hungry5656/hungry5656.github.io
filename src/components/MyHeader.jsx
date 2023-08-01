@@ -1,14 +1,20 @@
+"use client"
 
-
-import {MyMenu} from "./MyMenu"
+import {MyMenu, MyContact, MyNamespace} from "./index"
 
 export function MyHeader(){
 
     let mainHeader;
     mainHeader = (
-        <>
-            <MyMenu />
-        </>
+        <div className="d-flex justify-content-center bg-dark">
+            <div className="w-75">
+                <nav className="navbar navbar-expand">
+                    <MyNamespace />
+                    <MyMenu />
+                    <MyContact />
+                </nav>
+            </div>
+        </div>
     );
     return mainHeader;
 }

@@ -1,3 +1,5 @@
 export {MyMetadata} from "./MyMetadata"
 export {MyMenu} from "./MyMenu"
+export {MyContact} from "./MyContact"
+export {MyNamespace} from "./MyNamespace"
 export {MyHeader} from "./MyHeader"
