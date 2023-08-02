@@ -4,7 +4,7 @@ import {CONTACT_CONST} from "../constants"
 
 export function MyContact(){
     return (
-        <ul style={{float:"right"}} className="navbar-nav float-end">
+        <ul style={{float:"right"}} className="navbar-nav w-25">
             {CONTACT_CONST.map((elem) => (
                 <li key={elem.id}>
                     <a 
