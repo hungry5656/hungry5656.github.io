@@ -1,0 +1,46 @@
+.avatarHeader {
+    display: block;
+    // border-radius: 200px;
+    // box-sizing: border-box;
+    // background-color: #DDD;
+    // border: 5px solid #cfd8dc;
+}
+
+.MyNav {
+
+    li {
+        font-size: 125%;
+    }
+
+    .NameSpace {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 150%;
+    }
+
+    .ul_l {
+        text-align: left;
+        width: 25%;
+        text-align: center;
+    }
+    
+    .ul_r {
+        text-align: right;
+        width: 25%;
+        float: right;
+    }
+    
+    .ul_c {
+        text-align: center;
+        width: 50%;
+    }
+    
+    .navWrapper {
+        width: 100%
+    }
+    
+    .box_v_middle {
+        display: flex; 
+        align-items: center;
+    }
+}

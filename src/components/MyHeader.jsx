@@ -1,20 +1,25 @@
 "use client"
 
+import styles from "../scss/main.module.scss"
 import {MyMenu, MyContact, MyNamespace} from "./index"
 
 export function MyHeader(){
 
     let mainHeader;
     mainHeader = (
-        <div className="d-flex justify-content-center bg-dark">
-            <div className="w-75">
-                <nav className="navbar navbar-expand">
-                    <MyNamespace />
-                    <MyMenu />
-                    <MyContact />
-                </nav>
+        <header className="sticky top-0 z-10 bg-inherit shadow-sm">
+            <div className="container-md d-flex justify-content-center">
+                {/* <div className=""> */}
+                    <div className={`${styles.avatarHeader} w-75`}>
+                        <nav className={`navbar navbar-expand w-100 py-3 ${styles.MyNav}`}>
+                            <MyNamespace />
+                            <MyMenu />
+                            <MyContact />
+                        </nav>
+                    </div>
+                {/* </div> */}
             </div>
-        </div>
+        </header>
     );
     return mainHeader;
 }

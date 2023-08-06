@@ -1,6 +1,7 @@
 "use client"
 
 import {MENU_CONST} from "../constants"
+import styles from "../scss/main.module.scss"
 
 export function MyMenu({ onClick = () => {} }){
     let rootMenu;
@@ -10,7 +11,8 @@ export function MyMenu({ onClick = () => {} }){
     };
     
     rootMenu = (
-        <ul className="navbar-nav navbar-center justify-content-center w-50">
+        <div className={styles.ul_c}>
+        <ul className="navbar-nav navbar-center justify-content-center">
             {MENU_CONST.map((menuElem) => (
                 <li key={menuElem.id}>
                     <a 
@@ -24,6 +26,7 @@ export function MyMenu({ onClick = () => {} }){
                 </li>
             ))}
         </ul>
+        </div>
     );
 
     return rootMenu;

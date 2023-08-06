@@ -1,10 +1,12 @@
 "use client"
 
 import {CONTACT_CONST} from "../constants"
+import styles from "../scss/main.module.scss"
 
 export function MyContact(){
     return (
-        <ul style={{float:"right"}} className="navbar-nav w-25">
+        <div className={styles.ul_r}>
+        <ul style={{float:"right"}} className="navbar-nav">
             {CONTACT_CONST.map((elem) => (
                 <li key={elem.id}>
                     <a 
@@ -18,5 +20,6 @@ export function MyContact(){
                 </li>
             ))}
         </ul>
+        </div>
     )
 }

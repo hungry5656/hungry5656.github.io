@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css'
+import styles from "../scss/main.module.scss"
 import './globals.css'
 import { Inter } from 'next/font/google'
 import {MyMetadata, MyHeader} from 'src/components'
