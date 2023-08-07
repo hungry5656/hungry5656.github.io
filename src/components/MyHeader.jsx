@@ -9,15 +9,13 @@ export function MyHeader(){
     mainHeader = (
         <header className="sticky top-0 z-10 bg-inherit shadow-sm">
             <div className="container-md d-flex justify-content-center">
-                {/* <div className=""> */}
-                    <div className={`${styles.avatarHeader} w-75`}>
+                    <div className={`${styles.avatarHeader} w-100`}>
                         <nav className={`navbar navbar-expand w-100 py-3 ${styles.MyNav}`}>
                             <MyNamespace />
                             <MyMenu />
                             <MyContact />
                         </nav>
                     </div>
-                {/* </div> */}
             </div>
         </header>
     );
