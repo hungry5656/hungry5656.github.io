@@ -1,7 +1,8 @@
-import { useEffect, useState, useRef } from "react";
+// import { useEffect, useState, useRef } from "react";
 export const MY_DISCRIPTION = [
-    "a rising senior CSE student",
+    "a CSE student at UC Davis",
     "a #Future Engineer",
-    "an aggie from UC Davis",
-    "coding to make the world better"
+    "coding to make the world better",
+    "a Formula 1 & NBA fan",
+    "test"
 ];

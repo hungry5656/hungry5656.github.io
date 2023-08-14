@@ -1,7 +1,13 @@
+"use client";
+
 import { useEffect, useState, useRef } from "react";
+import {MY_DISCRIPTION} from "../constants"
 
 
 export function MyHeroPage(){
+
+    const [discripState] = useState(MY_DISCRIPTION);
+
     return (
         <div className="">
             <h1>
@@ -13,6 +19,11 @@ export function MyHeroPage(){
             </h1>
             <h2>
                 I am 
+                <div>
+                    {discripState.map((elem) => (
+                        elem
+                    ))}
+                </div>
             </h2>
             <p>
                 My name is <>Sizhuo Sun</>. You can call me <>Henry</> if you want. <br />
