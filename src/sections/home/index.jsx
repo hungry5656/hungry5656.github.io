@@ -4,10 +4,12 @@
 // import { LazyMotion, domAnimation, useInView } from "framer-motion";
 // import { HeadingDivider } from "components";
 // import { TimeLine } from "./TimeLine";
-import {MyHeroPage} from "../../components"
+import {HomeContainer} from "../../components"
 
 export function HomeSection() {
     return (
-        <MyHeroPage />
+        <section className="section">
+            <HomeContainer />
+        </section>
     );
 }

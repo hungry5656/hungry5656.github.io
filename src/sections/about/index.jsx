@@ -5,11 +5,12 @@
 // import { HeadingDivider } from "components";
 // import { TimeLine } from "./TimeLine";
 
+import {AboutContainer} from "../../components"
+
 export function AboutSection() {
     return (
-        <div>
-            My name is <>Sizhuo Sun</>. You can call me <>Henry</> if you want. <br />
-            I am currently a senior studying Computer Science and Engineering at UC Davis. 
-        </div>
+        <section id="about" className="section">
+            <AboutContainer />
+        </section>
     );
 }

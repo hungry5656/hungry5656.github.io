@@ -1,13 +1,14 @@
 "use client"
 
-import {MENU_CONST} from "../constants"
-import styles from "../scss/main.module.scss"
+import {MENU_CONST} from "../../constants"
+import styles from "../../scss/main.module.scss"
 
 export function MyMenu({ onClick = () => {} }){
     let rootMenu;
 
     const clickHandler = (e) => {
         console.log(e.type)
+        // scroll to hooks required here
     };
     
     rootMenu = (

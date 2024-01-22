@@ -1,7 +1,7 @@
 "use client"
 
-import styles from "../scss/main.module.scss"
-import {MyMenu, MyContact, MyNamespace} from "./index"
+import styles from "../../scss/main.module.scss"
+import {MyMenu, MyContact, MyNamespace} from "../index"
 
 export function MyHeader(){
 

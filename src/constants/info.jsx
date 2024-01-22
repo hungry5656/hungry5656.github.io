@@ -1,5 +1,5 @@
 // import { useEffect, useState, useRef } from "react";
-export const MY_DISCRIPTION = [
+export const MY_DESCRIPTION = [
     "study CSE at UC Davis",
     "am a #Future Engineer",
     "code to make the world better",

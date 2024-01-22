@@ -1,7 +1,7 @@
 "use client"
 
-import {CONTACT_CONST} from "../constants"
-import styles from "../scss/main.module.scss"
+import {CONTACT_CONST} from "../../constants"
+import styles from "../../scss/main.module.scss"
 
 export function MyContact(){
     return (

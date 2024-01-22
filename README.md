@@ -1,4 +1,7 @@
 # hungry5656.github.io
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/hungry5656/hungry5656.github.io/nextjs.yml)
+
+
 
 ## Introduction
 This is the project to create my personal website (portfolio, blog, and project showcase). The tech stack for this big project will be included below.

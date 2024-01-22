@@ -5,10 +5,12 @@
 // import { HeadingDivider } from "components";
 // import { TimeLine } from "./TimeLine";
 
+import {SkillsContainer} from "../../components"
+
 export function SkillsSection() {
     return (
-        <div>
-            This is Skills page
-        </div>
+        <section id="skills" className="section">
+            <SkillsContainer />
+        </section>
     );
 }
