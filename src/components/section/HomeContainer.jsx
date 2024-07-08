@@ -21,7 +21,7 @@ export function HomeContainer(){
     useEffect(() => {
         let interval = setInterval(() => {
             setTimer((timer + 1) % totalNum);
-        }, 2200);
+        }, 2500);
         return () => clearInterval(interval);
     }, [timer]);
 
@@ -35,11 +35,7 @@ export function HomeContainer(){
                         shiftAmount="50px"
                         classProp="display-5"
                     >
-                        Hi there 
-                        <div className="d-inline-block">
-                            <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40px" />
-                        </div>
-                        , I&apos;m Sizhuo (Henry).
+                        Hi there, I&apos;m Sizhuo (Henry).
                     </MotionText>
                     
                     <MotionText
@@ -66,6 +62,8 @@ export function HomeContainer(){
                                                 ? "-200%"
                                                 : timer === 3
                                                 ? "-300%"
+                                                : timer === 4
+                                                ? "-400%"
                                                 : "0",
                                         left: "15px"
                                     }}
@@ -84,8 +82,8 @@ export function HomeContainer(){
                         classProp="text-xl leading-relaxed"
                     >
                         <p className="text-justify">
-                            Welcome to my website! This site is used for me to learn web development 
-                            initially, but I also want to share experience from and let everyone get 
+                            Welcome to my website! This site is used for me to learn frontend development 
+                            initially, but I also want to share my experience and let everyone get 
                             to know me. Feel free to check my website! I also have this amazing blog 
                             site if you want to know more about what technology I am interested in. 
                             Check it below!
@@ -130,6 +128,7 @@ export function HomeContainer(){
                         </motion.div>
                     </MotionText>
                 </div>
+                <br></br>
             </div>
         </div>
     )

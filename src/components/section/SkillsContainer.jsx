@@ -8,6 +8,7 @@ export function SkillsContainer(){
             <div className="row">
                 <div className="col">
                     <SectionTitle Title={"SKILLS"} />
+                    
                 </div>
             </div>
         </div>

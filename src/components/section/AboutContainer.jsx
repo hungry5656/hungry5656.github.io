@@ -11,28 +11,33 @@ export function AboutContainer(){
             <div className="row">
                 <div className="col"> {/* left flexbox */}
                     <SectionTitle Title={"ABOUT ME"} />
+                    <br></br>
                     <MotionText
                         transTime={"0.3s"}
                         classProp="text-xl leading-relaxed"
                     >
                         <MotionText transTime="0.3s" shiftAmount = "-50px">
                         <p>
-                            My name is Sizhuo (Henry) Sun. I am currently a senior studying Computer Science & 
-                            Engineering at UC Davis. I am planning to pursue Master Degree after I graduate from 
-                            college. 
+                            I am a Full-stack Software Engineer who is passionate about Web, AI/ML, GPU/Parallel 
+                            and Embedded Software. I graduated from UC Davis with a B.S. in Computer Science and 
+                            Engineering on June 2024. Now I am pursuing Master Degree at Carnegie Mellon University
+                            for Software Engineering at the heart of Silicon Valley.
                         </p>
                         </MotionText>
                         <br></br>
+                        <br></br>
                         <MotionText transTime="0.3s" shiftAmount = "-40px">
                         <p>
-                            I was majoring in Computer Engineering when I first step into the campus. As I 
+                            I was majoring in Computer Engineering when I first step into the beautiful Davis campus. As I 
                             took more and more courses from both CS and ECE department, I found out that I 
-                            am passionate about software. That I why I decided to switch my major 
+                            am passionate about software. That&apos;s why I decided to switch my major 
                             to CSE. You may wonder what is that "Engineering" inside my major. Well, I took 
                             wide range of classes that helps me to become a better Engineer, including Physics, 
-                            Chemistry, circuits and Senior Design.
+                            Chemistry, circuits, Embedded System and my Senior Design Project that requires both 
+                            hardware and software skills.
                         </p>
                         </MotionText>
+                        <br></br>
                         <br></br>
                         <MotionText transTime="0.3s" shiftAmount = "-30px">
                         <p>
@@ -43,6 +48,7 @@ export function AboutContainer(){
                             The future of vehicles are beyond those technology.
                         </p>
                         </MotionText>
+                        <br></br>
                         <br></br>
                         <MotionText transTime="0.3s" shiftAmount = "-20px">
                         <p>
