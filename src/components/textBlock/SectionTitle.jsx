@@ -7,7 +7,9 @@ export function SectionTitle({Title}){
             xOry = {"X"}
             shiftAmount = {"-100px"}
             classProp={"display-6"}>
-            {Title}
+            <div className={"fs-1 fw-bold"}>
+                {Title}
+            </div>
         </MotionText>
     )
 }

@@ -2,9 +2,9 @@
 
 import { useEffect, useState, useRef } from "react";
 import { useInView, motion } from "framer-motion";
-import { MY_DESCRIPTION, HYPERLINK } from "../../constants"
-import { MotionText, MyButton } from "..";
-import styles from "../../scss/main.module.scss"
+import { MY_DESCRIPTION, HYPERLINK } from "../../../constants"
+import { MotionText} from "../../textBlock";
+import styles from "../../../scss/main.module.scss"
 
 
 
@@ -27,7 +27,7 @@ export function HomeContainer(){
 
     return (
         <div className="container">
-            <div className="row">
+            <div className="row mb-5">
                 <div className="col">
                     <MotionText
                         transTime={"0.1s"}
@@ -41,7 +41,7 @@ export function HomeContainer(){
                     <MotionText
                         transTime={"0.2s"}
                     >
-                        <h2 className="mt-2 relative flex flex-col overflow-hidden">
+                        <h2 className="mt-3 relative flex flex-col overflow-hidden">
                             <div
                                 className="text-[17px] md:text-2xl transform-none opacity-100"
                                 style={{
@@ -75,13 +75,11 @@ export function HomeContainer(){
                             </div>
                         </h2>
                     </MotionText>
-
-                    <br></br>
                     <MotionText
                         transTime={"0.3s"}
                         classProp="text-xl leading-relaxed"
                     >
-                        <p className="text-justify">
+                        <p className="mt-3 mb-2 text-justify">
                             Welcome to my website! This site is used for me to learn frontend development 
                             initially, but I also want to share my experience and let everyone get 
                             to know me. Feel free to check my website! I also have this amazing blog 
@@ -89,18 +87,19 @@ export function HomeContainer(){
                             Check it below!
                         </p>
                     </MotionText>
-                    <div className={"container-md d-flex justify-content-center"}>
-                    <ul className={"list-group list-group-horizontal"}>
+                    <div className={"container-md d-flex justify-content-left"}>
+                    <ul className={"mt-2 list-group list-group-horizontal"}>
                         <li>
-                            <div className={`${styles.buttonWrapper}`}>
+                            <div className={` ${styles.buttonWrapper}`}>
                                 <MotionText xOry="Y" shiftAmount="30px">
                                 <motion.a
                                     href={HYPERLINK.blog}
                                     target={"_blank"}
-                                    className={`btn btn-primary ${styles.buttonStyle}`}
+                                    className={`btn btn-primary ${styles.buttonStyle}  d-flex align-items-center justify-content-center`}
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{ scale: 0.8 }}
-                                >My Blog</motion.a>
+                                >My Blog
+                                </motion.a>
                                 </MotionText>
                             </div>
                         </li>
@@ -110,7 +109,7 @@ export function HomeContainer(){
                                 <motion.a
                                     href={HYPERLINK.projects_web}
                                     target={"_blank"}
-                                    className={`btn btn-primary ${styles.buttonStyle}`}
+                                    className={`btn btn-primary ${styles.buttonStyle}  d-flex align-items-center justify-content-center`}
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{ scale: 0.8 }}
                                 >Projects Demo</motion.a>

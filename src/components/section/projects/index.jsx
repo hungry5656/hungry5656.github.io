@@ -1,6 +1,6 @@
 "use client";
 
-import { SectionTitle, MotionText } from ".."
+import { SectionTitle, MotionText } from "../.."
 
 export function ProjectsContainer(){
     return (
