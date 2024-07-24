@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import TypewriterComponent from 'typewriter-effect';
+import Typewriter from 'typewriter-effect';
 import { useInView, motion } from "framer-motion";
 import { MY_DESCRIPTION, HYPERLINK } from "../../../constants"
 import { MotionText} from "../../textBlock";
@@ -35,7 +37,21 @@ export function HomeContainer(){
                         shiftAmount="50px"
                         classProp="display-5"
                     >
-                        Hi there, I&apos;m Sizhuo (Henry).
+                        <h1>
+                            <TypewriterComponent
+                            onInit={(typewriter) => {
+                                typewriter.typeString("Hi there! I'm <span style='color: OrangeRed;'>Sizhuo</span>:)")
+                                .pauseFor(1000)
+                                .deleteChars(8)
+                                .typeString("<span style='color: OrangeRed;'>Henry</span>:)")
+                                .pauseFor(1000)
+                                .start();
+                            }}
+                            options={{
+                                loop: true,
+                            }}
+                            />
+                        </h1>
                     </MotionText>
                     
                     <MotionText
