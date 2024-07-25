@@ -30,7 +30,7 @@ export function SkillsContainer(){
 											: `${index === 0 ? "translateY(250px)" : `translateY(${200 / index}px)`}`,
 										opacity: isStackInView ? 1 : 0,
 										transition: `all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) ${
-											index === 0 ? 0 : 0.5 * index
+											index === 0 ? 0 : 0.5 * (index % 4)
 										}s`
 									}}
 								>
@@ -40,16 +40,16 @@ export function SkillsContainer(){
 									<div className="flex items-center flex-wrap gap-x-5 gap-y-8">
 										{tech.items.map((item) => (
 											<div key={item.name} className="group relative flex">
-												<span tabIndex="0" role="img">
+												<div tabIndex="0" role="img">
 													{item.icon}
-												</span>
-												<span
-													className="opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800
-													text-sm text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2
-													translate-y-full mt-3 mx-auto px-2 w-max"
+												</div>
+												<div
+													className="group-hover:transition-opacity group-hover:opacity-100 group-hover:!opacity-100 group-hover:bg-gray-800
+													text-sm group-hover:text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2
+													translate-y-full mt-3 mx-auto px-2 w-max opacity-0"
 												>
 													{item.name}
-												</span>
+												</div>
 											</div>
 										))}
 									</div>

@@ -1,0 +1,9 @@
+.hide_scrollbar {
+    overflow: -moz-scrollbars-none; 
+    -ms-overflow-style: none;       
+    scrollbar-width: none;          
+  }
+
+.hide_scrollbar::-webkit-scrollbar {
+    display: none;
+}

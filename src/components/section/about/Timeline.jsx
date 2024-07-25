@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
 import { MotionText } from "../.."
 import {TIMELINE_CONSTANT} from "../../../constants"
+import styles from "../../../scss/main.module.scss"
 
 export function TimeLine() {
 	/// TODO: Add color mode support
@@ -62,7 +63,7 @@ export function TimeLine() {
 			<ul
 				ref={carouselRef}
 				onScroll={handleScroll}
-				className="flex flex-row flex-nowrap gap-5 justify-between overflow-x-auto snap-x cursor-pointer hide-scroll-bar mt-3"
+				className={`flex flex-row flex-nowrap gap-5 justify-between overflow-x-auto snap-x cursor-pointer hide-scroll-bar mt-3 ${styles.hide_scrollbar}`}
 			>
 				<>
 					{TIMELINE_CONSTANT.map((item, index) => {

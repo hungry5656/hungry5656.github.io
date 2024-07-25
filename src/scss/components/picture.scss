@@ -1,6 +1,14 @@
+.picContainer {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;    /* Vertically center */
+    height: 100%;           /* Ensure the container has height */
+  }
+
 .homePic {
     border-radius: 50%;
-    margin-bottom: 15px;
-    margin-right: 15px;
-    margin-left: 15px;
+    // margin-bottom: 15px;
+    // margin-right: 15px;
+    // margin-left: 15px;
+    width: 100%;
 }

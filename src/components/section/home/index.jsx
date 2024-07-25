@@ -30,7 +30,7 @@ export function HomeContainer(){
     return (
         <div className="container">
             <div className="row mb-5">
-                <div className="col">
+                <div className="col ml-2 mr-2 mb-2">
                     <MotionText
                         transTime={"0.1s"}
                         xOry="Y"
@@ -114,7 +114,7 @@ export function HomeContainer(){
                                     className={`btn btn-primary ${styles.buttonStyle}  d-flex align-items-center justify-content-center`}
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{ scale: 0.8 }}
-                                >My Blog
+                                ><p>My Blog</p>
                                 </motion.a>
                                 </MotionText>
                             </div>
@@ -135,11 +135,13 @@ export function HomeContainer(){
                     </ul>
                     </div>
                 </div>
-                <div className="col">
+                <div className="col ml-2 mr-2 mb-2">
                     {/* profile picture */}
                     <MotionText shiftAmount="45px">
                         <motion.div whileHover={{ scale: 1.05 }}>
-                        <img src="/assets/front_avatar.jpg" className={`${styles.homePic}`}></img>
+                        <div className={`${styles.HomeContainer}`}>
+                            <img src="/assets/front_avatar.jpg" className={`${styles.homePic}`}></img>
+                        </div>
                         </motion.div>
                     </MotionText>
                 </div>
