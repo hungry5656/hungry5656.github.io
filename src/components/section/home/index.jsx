@@ -6,6 +6,7 @@ import Typewriter from 'typewriter-effect';
 import { useInView, motion } from "framer-motion";
 import { MY_DESCRIPTION, HYPERLINK } from "../../../constants"
 import { MotionText} from "../../textBlock";
+import { MyButton } from "@/components";
 import styles from "../../../scss/main.module.scss"
 
 
@@ -106,7 +107,7 @@ export function HomeContainer(){
                     <div className={"container-md d-flex justify-content-left"}>
                     <ul className={"mt-2 list-group list-group-horizontal"}>
                         <li>
-                            <div className={` ${styles.buttonWrapper}`}>
+                            {/* <div className={` ${styles.buttonWrapper}`}>
                                 <MotionText xOry="Y" shiftAmount="30px">
                                 <motion.a
                                     href={HYPERLINK.blog}
@@ -117,11 +118,12 @@ export function HomeContainer(){
                                 ><p>My Blog</p>
                                 </motion.a>
                                 </MotionText>
-                            </div>
+                            </div> */}
+                            <MyButton aName="My Blog" url={HYPERLINK.blog} />
                         </li>
                         <li>
                             <div className={`${styles.buttonWrapper}`}>
-                                <MotionText xOry="Y" shiftAmount="30px">
+                                {/* <MotionText xOry="Y" shiftAmount="30px">
                                 <motion.a
                                     href={HYPERLINK.projects_web}
                                     target={"_blank"}
@@ -129,7 +131,8 @@ export function HomeContainer(){
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{ scale: 0.8 }}
                                 >Projects Demo</motion.a>
-                                </MotionText>
+                                </MotionText> */}
+                                <MyButton aName="Projects Demo" url={HYPERLINK.projects_web} />
                             </div>
                         </li>
                     </ul>

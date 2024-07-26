@@ -1,0 +1,13 @@
+@tailwind components;
+
+@layer components {
+    .buttonStyle {
+        /* width: 150px;
+        height: 56px;
+        border-radius: 40px;
+        text-align: center;
+        vertical-align: baseline;
+        line-height:2.3; */
+        @apply relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all rounded-3xl duration-200 bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900;
+    }
+}

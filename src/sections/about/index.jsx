@@ -10,6 +10,7 @@ import {AboutContainer} from "../../components"
 export function AboutSection() {
     return (
         <section id="about" className="section">
+            
             <AboutContainer />
         </section>
     );

@@ -24,8 +24,6 @@ export function AboutContainer(){
                             for Software Engineering at the heart of Silicon Valley.
                         </p>
                         </MotionText>
-                        {/* <br></br>
-                        <br></br> */}
                         <MotionText transTime="0.3s" shiftAmount = "-40px">
                         <p className={"mt-5 mb-4"}>
                             I was majoring in Computer Engineering when I first step into the beautiful Davis campus. As I 
@@ -37,8 +35,6 @@ export function AboutContainer(){
                             hardware and software skills.
                         </p>
                         </MotionText>
-                        {/* <br></br>
-                        <br></br> */}
                         <MotionText transTime="0.3s" shiftAmount = "-30px">
                         <p className={"mt-5 mb-4"}>
                             I was on the EcoCAR team at UC Davis from 2022 to 2023. During that time, I learned 
