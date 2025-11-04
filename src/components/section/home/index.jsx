@@ -104,36 +104,10 @@ export function HomeContainer(){
                             Check it below!
                         </p>
                     </MotionText>
-                    <div className={"container-md d-flex justify-content-left"}>
-                    <ul className={"mt-2 list-group list-group-horizontal"}>
+                    <div className={"container-md d-flex justify-content-center"}>
+                    <ul className={"mt-6 list-group list-group-horizontal"}>
                         <li>
-                            {/* <div className={` ${styles.buttonWrapper}`}>
-                                <MotionText xOry="Y" shiftAmount="30px">
-                                <motion.a
-                                    href={HYPERLINK.blog}
-                                    target={"_blank"}
-                                    className={`btn btn-primary ${styles.buttonStyle}  d-flex align-items-center justify-content-center`}
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.8 }}
-                                ><p>My Blog</p>
-                                </motion.a>
-                                </MotionText>
-                            </div> */}
                             <MyButton aName="My Blog" url={HYPERLINK.blog} />
-                        </li>
-                        <li>
-                            <div className={`${styles.buttonWrapper}`}>
-                                {/* <MotionText xOry="Y" shiftAmount="30px">
-                                <motion.a
-                                    href={HYPERLINK.projects_web}
-                                    target={"_blank"}
-                                    className={`btn btn-primary ${styles.buttonStyle}  d-flex align-items-center justify-content-center`}
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.8 }}
-                                >Projects Demo</motion.a>
-                                </MotionText> */}
-                                <MyButton aName="Projects Demo" url={HYPERLINK.projects_web} />
-                            </div>
                         </li>
                     </ul>
                     </div>

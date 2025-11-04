@@ -17,8 +17,8 @@ export function MyButton({aName, url}){
                         </div>
                     <motion.a
                         href={url}
-                        style={{"line-height":2.3}}
-                        className={"buttonStyle w-37 h-14 line-height-2.3 align-baseline"}
+                        style={{"lineHeight":2.3}}
+                        className={"buttonStyle w-37 h-14 lineHeight-2.3 align-baseline"}
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 0.8 }}
                     >{newElem}</motion.a>

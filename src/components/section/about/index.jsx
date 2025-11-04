@@ -18,10 +18,10 @@ export function AboutContainer(){
                     >
                         <MotionText transTime="0.3s" shiftAmount = "-50px">
                         <p className={"mt-4 mb-4"}>
-                            I am a Full-stack Software Engineer who is passionate about Web, AI/ML, GPU/Parallel 
+                            I am a Software Engineer who is passionate about Infrastructure, Cloud Computing, HPC, Web Development
                             and Embedded Software. I graduated from UC Davis with a B.S. in Computer Science and 
-                            Engineering on June 2024. Now I am pursuing Master Degree at Carnegie Mellon University
-                            for Software Engineering at the heart of Silicon Valley.
+                            Engineering on June 2024. Now I am pursuing M.S. in Software Engineering at Carnegie 
+                            Mellon University.
                         </p>
                         </MotionText>
                         <MotionText transTime="0.3s" shiftAmount = "-40px">
@@ -49,7 +49,15 @@ export function AboutContainer(){
                             I was a Software Engineer Intern at SK hynix America during summer 2023. As I am on the 
                             Architecture Enabling Team inside SOLAB, my role was to analyze a Storage OS that uses 
                             SPDK and DPDK to make SSD available over RDMA/TCP network. I really learned about the 
-                            knowledge related to distributed system, Storage architecture, and several Monitoring Tools.
+                            knowledge related to distributed system, Storage architecture, and several Monitoring Tools (Prometheus & Grafana).
+                        </p>
+                        </MotionText>
+                        <MotionText transTime="0.3s" shiftAmount = "-10px">
+                        <p className={"mt-5 mb-3"}>
+                            I was a Founding Engineer at a startup incubated by Shenzhen Innox Academy. During this experience, 
+                            I contributed to the development of backend systems and Infrastructure, optimized server performance, and led a team 
+                            to improve system efficiency. This role allowed me to deepen my expertise in API design, real-time 
+                            communication, and database optimization.
                         </p>
                         </MotionText>
                     </MotionText>
